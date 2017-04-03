@@ -101,6 +101,11 @@ void OneButton::attachDuringLongPress(callbackFunction newFunction)
 } // attachDuringLongPress
 
 // function to get the current long pressed state
+bool OneButton::isPressed(){
+  return _buttonPressed;
+}
+
+// function to get the current long pressed state
 bool OneButton::isLongPressed(){
   return _isLongPressed;
 }
