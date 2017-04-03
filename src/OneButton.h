@@ -20,7 +20,8 @@
 // ----- Callback function types -----
 
 extern "C" {
-  typedef void (*callbackFunction)(void);
+  // typedef void (*callbackFunction)(void);
+  typedef std::function<void()> callbackFunction;
 }
 
 
@@ -51,6 +52,7 @@ public:
   // call this function every some milliseconds for handling button events.
   void tick(void);
   bool isLongPressed();
+  bool isPressed();
 
 private:
   int _pin;        // hardware pin number. 
