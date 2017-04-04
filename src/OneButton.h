@@ -16,6 +16,7 @@
 #define OneButton_h
 
 #include "Arduino.h"
+#include "functional"
 
 // ----- Callback function types -----
 
